@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicaciones | GlowSkin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+        
+    <style>
+        :root {
+
+             /* Aquí copiamos el fondo y todo los estilos para las paginas para todas las paginas */
+
+
+            --color-fondo: #fce4ec;
+            /* Aquí pusimos el color de fondo de la páginAA */
+            --color-navbar: #e91e63;
+            /* Aquí el color de del navbar, cosa que esta arriba con todos los enlaces */
+            --color-texto-claro: #ffffff;
+            --color-texto-oscuro: #333333;
+            
+        }
+
+        /* pusimos el color para todo el fondo */
+        body {
+            background-color: var(--color-fondo);
+        }
+
+        /* aquí estaba como queriamos que fuera el navbar para que se viera mejor todos los colores */
+        .navbar-glowskin {
+            background-color: var(--color-navbar) !important;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-glowskin .nav-link,
+        .navbar-glowskin .navbar-brand {
+            color: var(--color-texto-claro) !important;
+        }
+
+        .navbar-glowskin .nav-link:hover {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        /* las tarjetitas de la ubi para las tiendas*/
+        .card-location {
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: white;
+            /* Tarjetas blancas para destacar */
+        }
+
+        .card-location:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(233, 30, 99, 0.15);
+            /* aqui las osmbras de las tarjetitias */
+        }
+
+        /* aqui va el textooo  */
+        .text-glowskin {
+            color: var(--color-navbar);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-glowskin sticky-top"> 
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">GlowSkin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="ubicaciones.html">Ubicaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ofertas.html">Ofertas</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="p-5 text-center my-4 mx-3 bg-white rounded shadow-sm">
+        <div class="container">
+            <h1 class="display-4 fw-light text-glowskin">Encuéntranos Cerca de Ti</h1>
+            <p class="lead text-muted">Visita una de nuestras sucursales en Ciudad de Guatemala y comienza tu viaje
+                K-Beauty.</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="text-center mb-5 fw-light text-glowskin">Nuestras Tiendas Físicas</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+                <div class="card card-location h-100 shadow-lg">
+                    <img src="https://imagenes.elpais.com/resizer/v2/ST6APJGGNRF25FA5PQXRYKFHUI.jpg?auth=5e57648a5cec4d6b5b227478f4c82d8ef73e8ec2008072dacb8cbeac0beb0d81&width=1960&height=1470&focal=2443%2C2995"
+                        class="card-img-top rounded-top" alt="Tienda Zona 15">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold text-glowskin">Zona 15, Vista Hermosa</h5>
+                        <p class="card-text text-muted small">
+                            Dirección: 4a Calle 20-50, Centro Comercial Vista Hermosa, Nivel 2.
+                            <br>Horario: Lunes a Martes, 10:00 - 10:01 hrs. no se atiende fuera de horario llegue rapido
+                            <br>Contacto: (502) 2345-6789
+                        </p>
+                        <hr class="text-glowskin">
+                        <h6 class="card-subtitle mb-2 text-muted">Ubicación exacta:</h6>
+                        <div class="ratio ratio-4x3">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30888.009123014202!2d-90.51364969623556!3d14.59901077698685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a307157ca07f%3A0x43c0e6e30cbb9ceb!2sZona%2015%2C%20Cdad.%20de%20Guatemala!5e0!3m2!1ses-419!2sgt!4v1760576533827!5m2!1ses-419!2sgt"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-location h-100 shadow-lg">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/77/06/e5/dear-keauties-visit-us.jpg?w=1200&h=-1&s=1"
+                        class="card-img-top rounded-top" alt="Tienda Zona 14">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold text-glowskin">Zona 14, La Noria</h5>
+                        <p class="card-text text-muted small">
+                            Dirección: Avenida Las Américas 12-25, Plaza La Noria, Local 101.
+                            <br>Horario: Lunes a Lunes 11:00 - 11:05 hrs. no se atiende fuera de horario llegue rapido
+                            <br>Contacto: (502) 2355-0011
+                        </p>
+                        <hr class="text-glowskin">
+                        <h6 class="card-subtitle mb-2 text-muted">Ubicación exacta:</h6>
+                        <div class="ratio ratio-4x3">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15445.297123030865!2d-90.52030389032554!3d14.580588741186482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3ec427650ff%3A0xc4e8a64136d7a539!2sZona%2014%2C%20Cdad.%20de%20Guatemala!5e0!3m2!1ses-419!2sgt!4v1760577625357!5m2!1ses-419!2sgt"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-location h-100 shadow-lg">
+                    <img src="https://www.premiumbeautynews.com/IMG/jpg/900x600_miin_2.jpg"
+                        class="card-img-top rounded-top" alt="Tienda Zona 10">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold text-glowskin">Zona 10, Fontabella</h5>
+                        <p class="card-text text-muted small">
+                            Dirección: 4ta Avenida 15-70, Centro Comercial Fontabella, Kiosco Exterior.
+                            <br>Horario: Lunes a lunes, 9:00 - 9:30 no se atiende fuera de horario llegue rapido
+                            <br>Contacto: (502) 2442-9988
+                        </p>
+                        <hr class="text-glowskin">
+                        <h6 class="card-subtitle mb-2 text-muted">Ubicación exacta:</h6>
+                        <div class="ratio ratio-4x3">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15445.297123030865!2d-90.52030389032554!3d14.580588741186482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3b921620f17%3A0xde5b4992ae81f907!2sZona%2010%2C%20Cdad.%20de%20Guatemala%2001010!5e0!3m2!1ses-419!2sgt!4v1760577693172!5m2!1ses-419!2sgt"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="text-center py-4 mt-5 navbar-glowskin">
+        <div class="container">
+            <p class="small text-white mb-0">&copy; 2025 GlowSkin. Tu resplandor empieza aquí. grupo de las chicas que se sientan enfrente</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
