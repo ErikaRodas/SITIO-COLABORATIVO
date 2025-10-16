@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ofertas | GlowSkin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-fondo: #fce4ec;
+      --color-navbar: #e91e63;
+      --color-texto-claro: #ffffff;
+      --color-texto-oscuro: #333333;
+    }
+
+    body {
+      background-color: var(--color-fondo);
+    }
+
+    .navbar-glowskin {
+      background-color: var(--color-navbar) !important;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-glowskin .nav-link,
+    .navbar-glowskin .navbar-brand {
+      color: var(--color-texto-claro) !important;
+    }
+    .navbar-glowskin .nav-link:hover {
+      color: rgba(255, 255, 255, 0.75) !important;
+    }
+
+    .btn-glowskin {
+      background-color: var(--color-navbar);
+      border-color: var(--color-navbar);
+      color: var(--color-texto-claro);
+      transition: background-color 0.3s;
+    }
+    .btn-glowskin:hover {
+      background-color: #c2185b;
+      border-color: #c2185b;
+    }
+
+    .btn-outline-glowskin {
+      border-color: var(--color-navbar);
+      color: var(--color-navbar);
+    }
+    .btn-outline-glowskin:hover {
+      background-color: var(--color-navbar);
+      color: white;
+    }
+
+    /* TARJETAS */
+    .card-glowskin {
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: white;
+    }
+    .card-glowskin:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(233, 30, 99, 0.15);
+    }
+
+    .card img {
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .precio-oferta {
+      color: #e91e63;
+      font-weight: bold;
+    }
+
+    .precio-original {
+      text-decoration: line-through;
+      color: gray;
+    }
+
+    .seccion-descripcion {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    footer {
+      background-color: var(--color-navbar);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 15px 15px 0 0;
+      margin-top: 40px;
+    }
+
+    .text-glowskin {
+      color: var(--color-navbar);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-glowskin sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-4" href="index.html">GlowSkin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="ubicaciones.html">Ubicaciones</a></li>
+          <li class="nav-item"><a class="nav-link active fw-bold" href="ofertas.html">Ofertas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="p-5 text-center my-4 mx-3 bg-white bg-glowskin-header rounded shadow-sm">
+    <div class="container">
+      <h1 class="display-6 fw-light text-glowskin">Bienvenida a GlowSkin </h1>
+      <p class="lead text-muted">
+        Descubre lo mejor del cuidado facial coreano, con productos originales, suaves y efectivos para cada tipo de piel.
+      </p>
+    </div>
+  </header>
+
+  <section id="ofertas" class="container seccion-descripcion mb-5">
+    <h2 class="text-center text-glowskin mb-3">Sobre nuestras promociones</h2>
+    <p class="lead text-center">
+      En <strong>GlowSkin</strong> te acercamos los mejores productos del cuidado facial coreano directamente desde Seúl. 
+      Nuestras promociones incluyen descuentos de hasta el 40% en marcas reconocidas como 
+      <em>Innisfree</em>, <em>COSRX</em>, <em>Laneige</em> y <em>Etude House</em>.
+    </p>
+    <p class="text-center">
+      Encontrarás mascarillas, sueros, limpiadores y cremas con ingredientes naturales como té verde, arroz, centella asiática y colágeno, 
+      perfectos para mantener tu piel saludable y radiante. 
+    </p>
+    <p class="text-center fw-bold text-glowskin">
+    ¡Ofertas válidas por tiempo limitado o hasta agotar existencias!
+    </p>
+  </section>
+
+  <div id="productos" class="container mb-5">
+    <h2 class="text-center mb-4 fw-light text-glowskin">Productos en Oferta</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Producto 1 -->
+      <div class="col">
+        <div class="card h-100 card-glowskin">
+          <img src="https://image.made-in-china.com/202f0j00gvpqVbnRLNkK/Korean-Skin-Care-Moisturizing-Mask-Natural-Green-Tea-Tender-Face-Mud-Sleeping-Facial-Mask.webp" alt="Mascarilla Facial Coreana">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Mascarilla Facial Hidratante</h5>
+            <p class="card-text text-muted small">Hidratación profunda con extracto de té verde. Ideal para todo tipo de piel.</p>
+            <p><span class="precio-original">Q200.00</span><br><span class="precio-oferta">Q125.00</span></p>
+            <a href="#" class="btn btn-outline-glowskin btn-sm">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="col">
+        <div class="card h-100 card-glowskin">
+          <img src="https://pibumate.com/wp-content/uploads/2024/12/Mixsoon-Glacier-Water-Hyaluronic-Acid-Serum-1.jpg" alt="Sérum de Ácido Hialurónico">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Sérum de Ácido Hialurónico</h5>
+            <p class="card-text text-muted small">Repara y rejuvenece la piel dándole un brillo natural.</p>
+            <p><span class="precio-original">Q300.00</span><br><span class="precio-oferta">Q249.99</span></p>
+            <a href="#" class="btn btn-outline-glowskin btn-sm">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="col">
+        <div class="card h-100 card-glowskin">
+          <img src="https://myskingt.com/cdn/shop/files/MYSKIN_26_db96857e-ba87-4996-b719-e7157f75e640.png?v=1709341198&width=600" alt="Crema de Noche Coreana">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Crema de Noche Revitalizante</h5>
+            <p class="card-text text-muted small">Nutre mientras duermes con extractos de ginseng coreano.</p>
+            <p><span class="precio-original">Q400.00</span><br><span class="precio-oferta">Q315.50</span></p>
+            <a href="#" class="btn btn-outline-glowskin btn-sm">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="#" class="btn btn-outline-glowskin">Ver más productos</a>
+    </div>
+  </div>
+
+   <footer class="text-center py-4 mt-5 navbar-glowskin">
+        <div class="container">
+            <p class="small text-white mb-0">&copy; 2025 GlowSkin. Tu resplandor empieza aquí.</p>
+        </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
